@@ -1,0 +1,93 @@
+{
+  "description": {
+    "name": "Brouet Blanc",
+    "period": "moyen-âge",
+    "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
+    "source": {
+      "ISBN": "9782012572058",
+      "URI": {
+        "scheme": "ARK",
+        "ressource": "12148/cb393132191"
+      },
+      "lang": "fr",
+      "author": "Taillevent",
+      "title": "Viandier",
+      "date": "13th"
+    }
+  },
+  "ingredientsAll": [
+    {
+      "unit": "pièce",
+      "minimun": 1,
+      "maximun": 1,
+      "wikidataQID": "Q3315904",
+      "_ingTranscript": "Viande blanche (chapon, poulaille, veau)",
+      "_ingTranslated": "Brouet blanc"
+    },
+    {
+      "wikidataQID": "Q184357",
+      "_ingTranscript": "Amandes",
+      "_ingTranslated": "Ama[n]des"
+    },
+    {
+      "unit": "pincée",
+      "wikidataQID": "Q35625",
+      "_ingTranscript": "Poudre de gingembre",
+      "_ingTranslated": "Pouldre de gingembre"
+    },
+    {
+      "wikidataQID": "Q41354",
+      "_ingTranscript": "Vin aigre (ou vinaigre)",
+      "_ingTranslated": "Vert jus"
+    },
+    {
+      "wikidataQID": "Q10210",
+      "_ingTranscript": "Vin blanc",
+      "_ingTranslated": "Vin blanc"
+    },
+    {
+      "unit": "grande quantité",
+      "wikidataQID": "Q11002",
+      "_ingTranscript": "Sucre",
+      "_ingTranslated": "Sucre"
+    },
+    {
+      "unit": "pincée",
+      "wikidataQID": "Q11254",
+      "_ingTranscript": "Sel",
+      "_ingTranslated": "Salez"
+    },
+    {
+      "wikidataQID": "Q15645384",
+      "_ingTranscript": "Blé",
+      "_ingTranslated": "Blé"
+    }
+  ],
+  "instructionsAll": [
+    {
+      "key": 1,
+      "_textTranscript": "P[o]ur faire brouet bla[n]c de chapo[n]s de poulaille on . p  de veau il co[n]vient le boulir et pre{n]dre le bouillo[n] qua[n]t ilz ont cuitz et mettez a ppart le bouillon et plumes",
+      "_textTranslated": "Faire bouillir votre viande blanche. Conservez le bouillon."
+    },
+    {
+      "key": 2,
+      "_textTranscript": "Plumes les ama[n]des et les broyez et destra[m]pez du bouillon de la pou-laille, des chappons ou de veau et puis coulez les amandes par une estamine.",
+      "_textTranslated": "Broyez les amandes et destrampez les dans le bouillon. Passez les au chinois."
+    },
+    {
+      "key": 3,
+      "_textTranscript": "Et prenez pouldre de gingembre blanc par raison et le defaictes de vert jus et de vin blanc et mettes foison sucre au bouillir et q[u’i]l soit de bon sel qua[n]t il sera bouilly mettes le bouillon en ung beau pot appart",
+      "_textTranslated": "Préparez la sauce. Déliez le gingembre avec le vin aigre et le vin blanc. Mettez à bouillir avec du sucre. Salez puis réservez."
+    },
+    {
+      "key": 4,
+      "_textTranscript": "et aussi le grain ",
+      "_textTranslated": "Cuir le blé (comme indiqué sur le paquet, soit dans un grand volume d'eau)."
+    },
+    {
+      "key": 5,
+      "_textTranscript": "et aussi le grain soit la poulaille, le chappon ou le beau et au dressier mettes vostre grain en plat et vostre bouillon.",
+      "_textTranslated": "Dressez et dégustez."
+    }
+  ]
+}

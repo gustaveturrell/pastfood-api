@@ -1,0 +1,36 @@
+{
+  "description": {
+    "name": "Le nom de la recette/Attention doit être unique",
+    "period": "Choisir la période entre ['moyen-âge', 'époque-moderne', 'époque-contemporaine']",
+    "resume": "Résumer concernant la recette, son histoire, d'où provient elle etc..",
+    "source": {
+      "ISBN": "Code ISBN pour l'ouvrage/ Attention si ISBN présent indiquer: lang, author, title, date",
+      "URI": {
+        "scheme": "Choisir le schema ['DOI', 'ARK']/ Attention si schema indiquer l'adresse de la ressource",
+        "ressource": "Code de la ressource après le ark:/ ou doi.org/"
+      },
+      "ref": "Indiquer toute référence concernant la source primaire/ Attention si URI présent le champs est remplacer par le lien générérer par celui automatiquement",
+      "lang": "us",
+      "author": "Indiquer le nom de l'auteur de la source primaire /Obligatoire",
+      "title": "Indiquer le titre de la source primaire /Oligatoire",
+      "date": "Indiquer le nom la date de la source primaire /Obligatoire"
+    }
+  },
+  "ingredientsAll": [
+    {
+      "unit": "Indiquer toute information concernant un ordre de mesure",
+      "minimun": "Indiquer si information concernant un minimun requis",
+      "maximun": "Indiquer si information concernant un maximun requis",
+      "wikidataQID": "Indiquer code wikidataQID de l'ingrédient/ Obligatoire",
+      "_ingTranscript": "Indiquer nom ingrédient obligatoire",
+      "_ingTranslated": "Indiquer nom ingrédient obligatoire"
+    }
+  ],
+  "instructionsAll": [
+    {
+      "_key": 1,
+      "_textTranscript": "Indiquer la transcription de l'étape/Obligatoire",
+      "_textTranslated": "Indiquer la traduction de l'étape"
+    }
+  ]
+}
