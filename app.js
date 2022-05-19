@@ -11,8 +11,8 @@ const globalErrorHandler = require('./controllers/errorController');
 const recipeRouter = require('./routes/recipeRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
-const ExpressMongoSanitize = require('express-mongo-sanitize');
 
+// Start express app
 const app = express();
 
 // Sécurise le HTTP Headers
@@ -45,13 +45,6 @@ app.use(mongoSanitize());
 
 // Désinfecte les données contre XSS
 app.use(xss());
-
-// Préviens la pollution des paramètres ci-dessous:
-// app.use(
-//   hpp({
-//     whitelist: ['duration', 'maxGroupSize'],
-//   })
-// );
 
 // Permet l'utilisation des données static présent dans le dossier /public
 app.use(express.static(`${__dirname}/public`));
