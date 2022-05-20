@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "JSON Schema for the Pastfood API",
+    "description": "this schema was create to help building recipe for the pastfood API, \npart of the first step of validation\nmongoose in second step have more tools for validation and check if the fields are valid ",
+    "type": "object",
+    "properties": {
+        "description": {
+            "title": "description of the recipe \n\n",
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+                "period": {
+                    "type": "string",
+                    "enum": [
+                        "moyen-âge",
+                        "époque-moderne",
+                        "époque-contemporaine"
+                    ]
+                },
+                "resume": {"type": "string"},
+                "source": {
+                    "title": "primary source\n",
+                    "type": "object",
+                    "properties": {
+                        "ISBN": {"type": "string"},
+                        "URI": {
+                            "title": "URI",
+                            "type": "object",
+                            "properties": {
+                                "scheme": {
+                                    "type": "string",
+                                    "enum": [
+                                        "DOI",
+                                        "ARK"
+                                    ]
+                                },
+                                "ressource": {"type": "string"}
+                            },
+                            "required": [
+                                "scheme",
+                                "ressource"
+                            ],
+                            "description": "contains the name of the scheme [ARK, DOI] and the information about the ressource (ark:/code || doi.org/code)\n\n\n\n",
+                            "examples": ["example of scheme/code:\nark:/12148/cb135532927\n\nscheme = ARK\ncode = 12148/cb135532927"]
+                        },
+                        "ref": {"type": "string"},
+                        "lang": {
+                            "type": "string",
+                            "enum": [
+                                "fr",
+                                "en"
+                            ]
+                        },
+                        "author": {"type": "string"},
+                        "title": {"type": "string"},
+                        "date": {
+                            "type": "string",
+                            "minLength": 4,
+                            "maxLength": 4
+                        }
+                    },
+                    "required": [
+                        "lang",
+                        "author",
+                        "title",
+                        "date"
+                    ],
+                    "description": "contains all information about the primary source\n"
+                }
+            },
+            "required": [
+                "name",
+                "period",
+                "resume"
+            ],
+            "description": "contains all information about the recipe for the user"
+        },
+        "ingredientsAll": {
+            "type": "array",
+            "items": {
+                "title": "ingredients\n",
+                "type": "object",
+                "properties": {
+                    "unit": {"type": "string"},
+                    "minimun": {"type": "number"},
+                    "maximun": {"type": "number"},
+                    "wikidataQID": {"type": "string"},
+                    "_ingTranscript": {"type": "string"},
+                    "_ingTranslated": {"type": "string"}
+                },
+                "required": [
+                    "wikidataQID",
+                    "_ingTranslated"
+                ],
+                "description": "list of all the ingredients "
+            }
+        },
+        "instructionsAll": {
+            "type": "array",
+            "items": {
+                "title": "instruction",
+                "type": "object",
+                "properties": {
+                    "key": {"type": "number"},
+                    "_textTranscript": {"type": "string"},
+                    "_textTranslated": {"type": "string"}
+                },
+                "required": [
+                    "key",
+                    "_textTranscript"
+                ],
+                "description": "list of all the instructions "
+            }
+        },
+        "_id": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{24}$"
+        }
+    },
+     "required": [ 'description', 'ingredientsAll', 'instructionsAll' ]
+}

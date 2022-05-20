@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 const validator = require('validator');
-// const wdk = require('wikidata-sdk');
+require('mongoose-schema-jsonschema')(mongoose);
 
 /*
 1) Le sous-schema pour la source primaire
@@ -150,15 +150,36 @@ const recipeSchema = new mongoose.Schema(
       type: Date,
       default: Date.now(),
     },
-    description: descriptionSubDoc,
-    ingredientsAll: [ingredientSubDoc],
-    instructionsAll: [instructionSubDoc],
+    description: {
+      type: descriptionSubDoc,
+      required: true,
+    },
+    ingredientsAll: {
+      type: [ingredientSubDoc],
+      required: true,
+      validate: [
+        (array) => array.length >= 2,
+        'Doit avoir minimun deux ingrédients',
+      ],
+    },
+    instructionsAll: {
+      type: [instructionSubDoc],
+      required: true,
+      validate: [
+        (array) => array.length >= 2,
+        'Doit avoir minimun deux instructions',
+      ],
+    },
   },
   {
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
   }
 );
+
+// const jsonSchema = recipeSchema.jsonSchema();
+// console.dir(jsonSchema, { depth: null });
+
 // Indexes: pour recherche plus efficace
 recipeSchema.index({ slug: 1 });
 
