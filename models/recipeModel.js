@@ -102,10 +102,10 @@ const ingredientSubDoc = new mongoose.Schema({
   },
   _ingTranscript: {
     type: String,
+    required: true,
   },
   _ingTranslated: {
     type: String,
-    required: true,
   },
 });
 
