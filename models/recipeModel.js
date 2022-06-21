@@ -98,7 +98,6 @@ const ingredientSubDoc = new mongoose.Schema({
   },
   wikidataQID: {
     type: String,
-    required: true,
   },
   _ingTranscript: {
     type: String,
@@ -213,7 +212,7 @@ Middleware pour mettre en minuscule les ingrédients pour l'intérropérabilité
 recipeSchema.pre('save', function (next) {
   this.ingredientsAll.forEach((obj) => {
     obj._ingTranscript = obj._ingTranscript.toLowerCase();
-    obj._ingTranslated = obj._ingTranslated.toLowerCase();
+    // obj._ingTranslated = obj._ingTranslated.toLowerCase();
   });
 
   next();

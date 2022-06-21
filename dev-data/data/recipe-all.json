@@ -1,93 +1,599 @@
-{
-  "description": {
-    "name": "Brouet Blanc",
-    "period": "moyen-âge",
-    "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
-    "source": {
-      "ISBN": "9782012572058",
-      "URI": {
-        "scheme": "ARK",
-        "ressource": "12148/cb393132191"
+[
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1ccc89d66b53e60058c5c",
+    "description": {
+      "name": "Tarte aux pommes figues raisin",
+      "period": "moyen-âge",
+      "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/cb393132191"
+        },
+        "ISBN": "9782012572058",
+        "lang": "fr",
+        "author": "Taillevent",
+        "title": "Viandier",
+        "date": "13th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/cb393132191"
+      }
+    },
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q89",
+        "_ingTranscript": "pommes"
       },
-      "lang": "fr",
-      "author": "Taillevent",
-      "title": "Viandier",
-      "date": "13th"
-    }
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q2746643",
+        "_ingTranscript": "figues"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q10978",
+        "_ingTranscript": "raisins"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q3406628",
+        "_ingTranscript": "oignons"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q477248",
+        "_ingTranscript": "pâtes (brisé, sablée ou feuilletée)"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q25434",
+        "_ingTranscript": "saffran"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q282",
+        "_ingTranscript": "vin"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q34172",
+        "_ingTranscript": "beurre (ou huile)"
+      },
+      {
+        "_ingTranscript": "anis",
+        "wikidataQID": "https://www.wikidata.org/entity/undefined"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q35625",
+        "_ingTranscript": "gingembre"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q28165",
+        "_ingTranscript": "cannelle"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Tartres de pommes despece et pieces et mises figues et raisins bien nettoyes",
+        "_textTranslated": "Nettoyez les pommes, les figues et les raisins."
+      },
+      {
+        "key": 2,
+        "_textTranscript": "et mis parmy les pommes et figues et tout mesle ensemble et y soit mis de l’oignon friut au beurre ou a l’huille et de vin ",
+        "_textTranslated": "Faites frire un oignon dans du beurre ou de l’huile et du vin."
+      },
+      {
+        "key": 3,
+        "_textTranscript": " et par le par des pommes broyes et destrempes de vin et soient assemblées les autres pommes broyes mises avec le surplus et du saffran dedans ung peu de menues espice cynamome et gingembre blanc anys et pigurlat qui en aura",
+        "_textTranslated": "Epluchez puis hachez les fruits et détrampez les dans du vin. Egoutez le tout puis ajoutez du safran, de la cannelle, du gingembre et de l’anis."
+      },
+      {
+        "key": 4,
+        "_textTranscript": "et foiet faictrs deux grands avasses de paste et toute les mistioncs mieses ensemble fort broyes a la main sur le paste bien espes de opmmes et autres mistoins et apres soit mis le couvercle de sssus et bien vouverte et doree de saffran et mise au four et fait cuyre.",
+        "_textTranslated": "Préparez deux pâtes à tarte : foncez votre plat avec l’une, versez les fruits et les oignons frits puis recouvrez de la seconde. Faites cuire au four. "
+      }
+    ],
+    "slug": "tarte-aux-pommes-figues-raisin",
+    "id": "62b1ccc89d66b53e60058c5c"
   },
-  "ingredientsAll": [
-    {
-      "unit": "pièce",
-      "minimun": 1,
-      "maximun": 1,
-      "wikidataQID": "Q3315904",
-      "_ingTranscript": "Viande blanche (chapon, poulaille, veau)",
-      "_ingTranslated": "Brouet blanc"
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1cd919d66b53e60058c5f",
+    "description": {
+      "name": "Soupes a l'oignon",
+      "period": "moyen-âge",
+      "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/cb393132191"
+        },
+        "ISBN": "9782012572058",
+        "lang": "fr",
+        "author": "Taillevent",
+        "title": "Viandier",
+        "date": "13th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/cb393132191"
+      }
     },
-    {
-      "wikidataQID": "Q184357",
-      "_ingTranscript": "Amandes",
-      "_ingTranslated": "Ama[n]des"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q3406628",
+        "_ingTranscript": "oignon"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q34172",
+        "_ingTranscript": "beurre"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q42366457",
+        "_ingTranscript": "bouillon de légume"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q1060458",
+        "_ingTranscript": "vert jus"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q25284",
+        "_ingTranscript": "percil"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Et pour faire souppe a l[‘]oignon plumes les oigno[n]s et les / mainsces bien menu ou par rouez et les souffrises en beurre / assel longueme[n]t et y mettes ung peu d[‘]eaux pour garder q[u’i]l / ne brule",
+        "_textTranslated": "Hachez menu les oignons puis faites les revenir dans du beurre. Ajoutez un peu d'eau pour qu'ils ne brûlent pas."
+      },
+      {
+        "key": 2,
+        "_textTranscript": "et asse[m]bles puree de pois ou d[‘]eaux et mettes du vert / jus et du percil.",
+        "_textTranslated": "Ajoutez un bouillon de légume dans un volume d'eau et laissez chauffer. Ajoutez du vert jus et du percil."
+      }
+    ],
+    "slug": "soupes-a-l'oignon",
+    "id": "62b1cd919d66b53e60058c5f"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1ce569d66b53e60058c62",
+    "description": {
+      "name": "Salemme ",
+      "period": "moyen-âge",
+      "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/cb393132191"
+        },
+        "ISBN": "9782012572058",
+        "lang": "fr",
+        "author": "Taillevent",
+        "title": "Viandier",
+        "date": "13th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/cb393132191"
+      }
     },
-    {
-      "unit": "pincée",
-      "wikidataQID": "Q35625",
-      "_ingTranscript": "Poudre de gingembre",
-      "_ingTranslated": "Pouldre de gingembre"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q165278",
+        "_ingTranscript": "poisson blanc (brochet, carpe)"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q184357",
+        "_ingTranscript": "amandes"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q28165",
+        "_ingTranscript": "cannelle"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q35625",
+        "_ingTranscript": "gingembre"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q15622897",
+        "_ingTranscript": "clou de girofle"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q25434",
+        "_ingTranscript": "safran"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q1060458",
+        "_ingTranscript": "vertjus"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q42366457",
+        "_ingTranscript": "bouillon de légume"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Et pour faire Salemme. Soit prins brochetz carpes et au/tres poisson qui y appartient et les faitz escailler et le fri/re ",
+        "_textTranslated": "Ecaillez votre poisson et faites le frire."
+      },
+      {
+        "key": 2,
+        "_textTranscript": " broyes amandes a tout l'escorce et deffaictes de puree / de poix. ",
+        "_textTranslated": "Broyez les amandes et délayez avec du bouillon de légume."
+      },
+      {
+        "key": 3,
+        "_textTranscript": "Et puis prenez semblablement espices comme au / brouet d[']alemaigne (les espices qui appartienne[n]t cestassavoir canelle ginge[m] / bre, menues espices. cestadire clou graine et saffran) et les deffaictes de vert jus.",
+        "_textTranslated": "Pour la sauce, mélangez la cannelle, le gingembre,le clou de girofle et le safran et délayez avec le vert jus (vinaigre)."
+      },
+      {
+        "key": 4,
+        "_textTranscript": "Et faictes bouillit vostre bouillon ettes apart tant qu'il soit te[m]ps de dressier.",
+        "_textTranslated": "Préparez un bouillon à part. Dressez et dégustez."
+      }
+    ],
+    "slug": "salemme",
+    "id": "62b1ce569d66b53e60058c62"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1cf0b9d66b53e60058c65",
+    "description": {
+      "name": "Ruelle de veau en ragout",
+      "period": "époque-moderne",
+      "resume": "Recette issue du Cuisinier Francois. Rédigé par François Pierre de La Varenne vers 1651, il prend part à la révolution culinaire du XVIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/bpt6k114423k"
+        },
+        "ISBN": "9782012567931",
+        "lang": "fr",
+        "author": "Francois de la Varenne",
+        "title": "Le Cuisinier Francois enseignant la manière de bien apprester et assaisonner viandes, légumes",
+        "date": "17th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/bpt6k114423k"
+      }
     },
-    {
-      "wikidataQID": "Q41354",
-      "_ingTranscript": "Vin aigre (ou vinaigre)",
-      "_ingTranslated": "Vert jus"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q56758950",
+        "_ingTranscript": "lard"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q2935",
+        "_ingTranscript": "veau"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q96362190",
+        "_ingTranscript": "bouillon (de légume, de boeuf ou de volaille, à votre convenance)"
+      },
+      {
+        "_ingTranscript": "bouquet aromatique",
+        "wikidataQID": "https://www.wikidata.org/entity/undefined"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q107262394",
+        "_ingTranscript": "chapelure"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q3406628",
+        "_ingTranscript": "oignon"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q83093",
+        "_ingTranscript": "truffes ou champignons"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Lardez la de gros lard, l'embrochez et la faites cuire un peu plus de la moitié, ",
+        "_textTranslated": "Farcir votre pièce de veau avec du lard. Faite la cuire à la broche. A mi-cuisson, retirez la du feu."
+      },
+      {
+        "key": 2,
+        "_textTranscript": "Puis la mettez mitonner avec peu de bouillon et un bouquet, et couvrez bien. ",
+        "_textTranslated": " Mettez à mittoner la viande avec du bouillon et un bouquet aromatique. couvrez. "
+      },
+      {
+        "key": 3,
+        "_textTranscript": " Estant cuite servez avec une sauce liée de chapelure de pain ou de farine et un oignon. ",
+        "_textTranslated": " Pendant ce temps préparez la sauce: hachez un oignon et faite le revenir avec de la chapelur et du bouillon. "
+      },
+      {
+        "key": 4,
+        "_textTranscript": "Servez la garnie de troufles et champignons ",
+        "_textTranslated": " Servez accompagné de champignons ou de truffes."
+      }
+    ],
+    "slug": "ruelle-de-veau-en-ragout",
+    "_primarySource": true,
+    "id": "62b1cf0b9d66b53e60058c65"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1d0539d66b53e60058c6d",
+    "description": {
+      "name": "Poulet farcis à l'étuvé",
+      "period": "moyen-âge",
+      "resume": "Recette issue du Viandier, ouvrage attribué à Taillevent, cuisinier des rois de France Charles V et Charles VI, daté du XIIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/cb393132191"
+        },
+        "ISBN": "9782012572058",
+        "lang": "fr",
+        "author": "Taillevent",
+        "title": "Viandier",
+        "date": "13th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/cb393132191"
+      }
     },
-    {
-      "wikidataQID": "Q10210",
-      "_ingTranscript": "Vin blanc",
-      "_ingTranslated": "Vin blanc"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q18087876",
+        "_ingTranscript": "volaille"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q745361",
+        "_ingTranscript": "farce"
+      },
+      {
+        "unit": "un quarteron (un peu)",
+        "_ingTranscript": "poudre de duc (mélange de gingembre, cannelle, clou degirofle, fraine de paradis, sucre)",
+        "wikidataQID": "https://www.wikidata.org/entity/undefined"
+      },
+      {
+        "unit": "cl",
+        "minimun": 20,
+        "maximun": 20,
+        "wikidataQID": "https://www.wikidata.org/entity/Q41354",
+        "_ingTranscript": "vinaigre"
+      },
+      {
+        "unit": "once",
+        "minimun": 1,
+        "maximun": 1,
+        "wikidataQID": "https://www.wikidata.org/entity/Q42527",
+        "_ingTranscript": "menues épices"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Et pouletz farcis a l’estuvee. Prennez ung pot neuf et les mettes dedans quant ils seront farcys  et les couvrez bien qu’il nen ysse point de fumée.",
+        "_textTranslated": " Farcir votre volaille, puis faites la cuire couverte. "
+      },
+      {
+        "key": 2,
+        "_textTranscript": "Et quant ilz seront cuitz prenez chopine de vinaigre, une once de menues espices et mectes tout dedens le pot",
+        "_textTranslated": "Ajoutez du vinaigre et les épices."
+      },
+      {
+        "key": 3,
+        "_textTranscript": "et ung quarteron de pouldre de duc et quant ilz seront bien cuitz les mettez en platz se voiez que il ayt trop fresse ostez la ",
+        "_textTranslated": "Ajoutez enfin de la poudre de duc (mélange de gingembre, cannelle, clou degirofle, fraine de paradis, sucre). Dressez. "
+      }
+    ],
+    "slug": "poulet-farcis-a-l'etuve",
+    "id": "62b1d0539d66b53e60058c6d"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-21T13:14:39.819Z",
+    "_id": "62b1d18b9d66b53e60058c74",
+    "description": {
+      "name": "Potage de lapereaux",
+      "period": "époque-moderne",
+      "resume": "Recette issue du Cuisinier Francois. Rédigé par François Pierre de La Varenne vers 1651, il prend part à la révolution culinaire du XVIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/bpt6k114423k"
+        },
+        "ISBN": "9782012567931",
+        "lang": "fr",
+        "author": "Francois de la Varenne",
+        "title": "Le Cuisinier Francois enseignant la manière de bien apprester et assaisonner viandes, légumes",
+        "date": "17th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/bpt6k114423k"
+      }
     },
-    {
-      "unit": "grande quantité",
-      "wikidataQID": "Q11002",
-      "_ingTranscript": "Sucre",
-      "_ingTranslated": "Sucre"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q9394",
+        "_ingTranscript": "lapereaux"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q7802",
+        "_ingTranscript": "pain"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q96362190",
+        "_ingTranscript": "bouillon (boeuf, volaille, légume)"
+      },
+      {
+        "_ingTranscript": "bouquet aromatique",
+        "wikidataQID": "https://www.wikidata.org/entity/undefined"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q83093",
+        "_ingTranscript": "champignons (ou truffes)"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "estans bien habillez faites les blanchir et les passez par la poêlle, ",
+        "_textTranslated": "Faites blanchir vos lapereaux, puis passez les à la poêle. "
+      },
+      {
+        "key": 2,
+        "_textTranscript": "Ensuite empotez les avec bon bouillon et un bouquet, et faites les cuire à propos ",
+        "_textTranslated": " Une fois cuit, mettez les dans un pot avec un volume de bouillon et un bouquet aromatique. Faites cuire. "
+      },
+      {
+        "key": 3,
+        "_textTranscript": " Faites bien mitonner vostre pain et le garnissez de vos lapereaux, champignons et troufles, puis servez, et  de ce que vous aurez.",
+        "_textTranslated": " Ajoutez y le pain et laissez le s'impreigner. Dressez ensuite: accompagnez vos lapereaux de champignons ou de truffes.   "
+      }
+    ],
+    "slug": "potage-de-lapereaux",
+    "id": "62b1d18b9d66b53e60058c74"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-20T21:38:30.668Z",
+    "_id": "62b0e8d97cadef06002e75c4",
+    "description": {
+      "name": "Tourte de riz de veau",
+      "period": "époque-moderne",
+      "resume": "Recette issue du Cuisinier Francois. Rédigé par François Pierre de La Varenne vers 1651, il prend part à la révolution culinaire du XVIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "12148/bpt6k114423k"
+        },
+        "ISBN": "9782012567931",
+        "lang": "fr",
+        "author": "Francois de la Varenne",
+        "title": "Le Cuisinier Francois enseignant la manière de bien apprester et assaisonner viandes, légumes",
+        "date": "17th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/bpt6k114423k"
+      }
     },
-    {
-      "unit": "pincée",
-      "wikidataQID": "Q11254",
-      "_ingTranscript": "Sel",
-      "_ingTranslated": "Salez"
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q49951",
+        "_ingTranscript": "riz de veau"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q29221",
+        "_ingTranscript": "pâte feuilletée"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q83093",
+        "_ingTranscript": "champignons"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q2690965",
+        "_ingTranscript": "truffes"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q371101",
+        "_ingTranscript": "morilles"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q93189",
+        "_ingTranscript": "jaunes d'oeufs"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q23041430",
+        "_ingTranscript": "coeuf d'artichaud"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q2853420",
+        "_ingTranscript": "asperges"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Vous les pouvez mettre en paste fine ou fueilletée, picquez et rostis, bien assaisonnez et garnis,",
+        "_textTranslated": "Préparez une pâte et faites la précuire. Garnissez la de riz de veau, assaisonnez. "
+      },
+      {
+        "key": 2,
+        "_textTranscript": "ou bien les passez avec champignons, crestes, trufles, morilles, janes d'oeufs, cus d'artichaud, ou quelques asperges rompuës et ainsi faite vostre tourte, ",
+        "_textTranslated": "Il est également possible de garnir la pâtes avec les champignons, des truffes, des morilles, des jaunes d'oeufs, des coeurs d'artichaud, des asperges. "
+      },
+      {
+        "key": 3,
+        "_textTranscript": " que vous servirez avec une liaison de champignons par dessus. ",
+        "_textTranslated": "Cuire et servir avec des champignons. "
+      }
+    ],
+    "slug": "tourte-de-riz-de-veau",
+    "id": "62b0e8d97cadef06002e75c4"
+  },
+  {
+    "ratingsQuantity": 0,
+    "ratingsAverage": 4.5,
+    "createdAt": "2022-06-20T21:38:30.668Z",
+    "_id": "62b0e9b57cadef06002e75c9",
+    "description": {
+      "name": "Tourte de blanc de chapon",
+      "period": "époque-moderne",
+      "resume": "Recette issue du Cuisinier Francois. Rédigé par François Pierre de La Varenne vers 1651, il prend part à la révolution culinaire du XVIIe siècle",
+      "source": {
+        "URI": {
+          "scheme": "ARK",
+          "ressource": "ark:/12148/bpt6k114423k"
+        },
+        "ISBN": "9782012567931",
+        "lang": "fr",
+        "author": "Francois de la Varenne",
+        "title": "Le Cuisinier Francois enseignant la manière de bien apprester et assaisonner viandes, légumes",
+        "date": "17th",
+        "ref": "https://gallica.bnf.fr/ark:/12148/bpt6k114423k"
+      }
     },
-    {
-      "wikidataQID": "Q15645384",
-      "_ingTranscript": "Blé",
-      "_ingTranslated": "Blé"
-    }
-  ],
-  "instructionsAll": [
-    {
-      "key": 1,
-      "_textTranscript": "P[o]ur faire brouet bla[n]c de chapo[n]s de poulaille on . p  de veau il co[n]vient le boulir et pre{n]dre le bouillo[n] qua[n]t ilz ont cuitz et mettez a ppart le bouillon et plumes",
-      "_textTranslated": "Faire bouillir votre viande blanche. Conservez le bouillon."
-    },
-    {
-      "key": 2,
-      "_textTranscript": "Plumes les ama[n]des et les broyez et destra[m]pez du bouillon de la pou-laille, des chappons ou de veau et puis coulez les amandes par une estamine.",
-      "_textTranslated": "Broyez les amandes et destrampez les dans le bouillon. Passez les au chinois."
-    },
-    {
-      "key": 3,
-      "_textTranscript": "Et prenez pouldre de gingembre blanc par raison et le defaictes de vert jus et de vin blanc et mettes foison sucre au bouillir et q[u’i]l soit de bon sel qua[n]t il sera bouilly mettes le bouillon en ung beau pot appart",
-      "_textTranslated": "Préparez la sauce. Déliez le gingembre avec le vin aigre et le vin blanc. Mettez à bouillir avec du sucre. Salez puis réservez."
-    },
-    {
-      "key": 4,
-      "_textTranscript": "et aussi le grain ",
-      "_textTranslated": "Cuir le blé (comme indiqué sur le paquet, soit dans un grand volume d'eau)."
-    },
-    {
-      "key": 5,
-      "_textTranscript": "et aussi le grain soit la poulaille, le chappon ou le beau et au dressier mettes vostre grain en plat et vostre bouillon.",
-      "_textTranslated": "Dressez et dégustez."
-    }
-  ]
-}
+    "ingredientsAll": [
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q594676",
+        "_ingTranscript": "chapon"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q93189",
+        "_ingTranscript": "jaunes d'oeufs"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q34172",
+        "_ingTranscript": "beurre"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q11254",
+        "_ingTranscript": "sel"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q36071",
+        "_ingTranscript": "pistaches"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q11002",
+        "_ingTranscript": "sucre"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q29221",
+        "_ingTranscript": "pâte feuilletée"
+      },
+      {
+        "_ingTranscript": "pignons de pin",
+        "wikidataQID": "https://www.wikidata.org/entity/undefined"
+      },
+      {
+        "wikidataQID": "https://www.wikidata.org/entity/Q1382423",
+        "_ingTranscript": "raisin secs"
+      }
+    ],
+    "instructionsAll": [
+      {
+        "key": 1,
+        "_textTranscript": "Prenez quelque quantité de blancs de chapon, achez les bien menus, et les délayez avec deux jaunes d'oeufs, beurre frais, peu de sel, pistaches, force sucre, peu de jus ou bon bouillon. ",
+        "_textTranslated": "Hachez menu les blancs de chapon, délayez avec deux jaunes d'oeufs,  du beurre; du sel, des psitaches, du sucre, du jus et du bouillon. "
+      },
+      {
+        "key": 2,
+        "_textTranscript": "Faites vostre tourte de pasté fine ou fueilletée, la sucrez bien, et si vouos voulez, outre ce que dessus, adioustez y pignons, et raisins de Corinthe.  ",
+        "_textTranslated": "Précuisez une pâte feuilletée, sucrez la, garnissez là, puis ajoutez des pignons de pin et des raisins sec. "
+      }
+    ],
+    "slug": "tourte-de-blanc-de-chapon",
+    "id": "62b0e9b57cadef06002e75c9"
+  }
+]
