@@ -18,20 +18,9 @@ Changer la adresse environnement si besoin :
 
 Installer CORS si problème vers le backEnd
 
-- const cors = require('cors');
+const cors = require('cors');
 
-- const whitelist = ['http://localhost:XXXXX/']; `changer adresse si besoin du frontend`
-const corsOptions = {
-  credentials: true,
-  origin: (origin, callback) => {
-    if(whitelist.includes(origin))
-      return callback(null, true)
-
-      callback(new Error('Not allowed by CORS'));
-  }
-}
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 ## Vite Config 
 - Changer dans proxy la ligne  target: 'http://localhost:XXXXX/' vers l'adresse du backend
