@@ -43,7 +43,7 @@ export default defineComponent({
             recette: {},
             showmodal:false,
             index:{},
-             search: "",
+             search: {},
         }
     },
     created(){
@@ -90,7 +90,7 @@ export default defineComponent({
 
 <template>
 
-<div class="dark:bg-[#141414]">
+<div class="dark:bg-[#141414] h-screen">
   <div
     id="search-bar"
     class="xl:w-96 container mx-auto mb-6 dark:bg-[#141414]"
@@ -149,7 +149,7 @@ export default defineComponent({
       </div>
       <div id="name_recette" class="flex justify-center items-center flex-col">
         <div id="rec_name">
-          <h1 class="tab-title-recipe">{{}}</h1>
+          <h1 class="tab-title-recipe">{{item.description.name}}</h1>
         </div>
         <div
           class="btn-detail bg-[#242424] dark:bg-orange-600 rounded px-2 py-2 text-white hover:bg-red-600 dark:hover:bg-orange-400 dark:hover:text-black"
