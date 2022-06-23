@@ -48,7 +48,7 @@ export default defineComponent({
     },
     created(){
         recipeService.getAllRecipes()
-            .then((res) => {(this.recette = res.data);
+            .then((res) => {(this.recette = res.data.data.data);
              console.log(this.recette)
              
              }).catch(err => console.log(err))
