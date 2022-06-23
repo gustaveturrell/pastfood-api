@@ -12,7 +12,7 @@ Changer la adresse environnement si besoin :
  - `${import.meta.env.VITE_APP_API_URL}` 
  VITE_APP_API_URL étant l'adresse dirigée vers le BackEnd soit http:localhost:XXXXX/ il faudra la changer
  Stocké dans le fichier .env il fauda le créer 
- - VITE_APP_API_URL=http://localhost:5000/
+ - VITE_APP_API_URL=http://localhost:XXXXXXX/
 
 ## Config pour le backend
 
@@ -20,7 +20,7 @@ Installer CORS si problème vers le backEnd
 
 - const cors = require('cors');
 
-- const whitelist = ['http://localhost:3000/']; `changer adresse si besoin du frontend`
+- const whitelist = ['http://localhost:XXXXX/']; `changer adresse si besoin du frontend`
 const corsOptions = {
   credentials: true,
   origin: (origin, callback) => {
@@ -33,3 +33,5 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+## Vite Config 
+- Changer dans proxy la ligne  target: 'http://localhost:XXXXX/' vers l'adresse du backend
