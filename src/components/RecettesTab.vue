@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue';
 import Cart from '../components/Cart.vue'
 
@@ -34,13 +34,13 @@ const openFiltre = ()=>{
 
 </script>
 
-<script>
+<script lang="ts">
 import {defineComponent} from 'vue'
 import { recipeService } from '../services/recipes_services';
 export default defineComponent({
     data(){
         return{
-            recette: [],
+            recette: {},
             showmodal:false,
             index:{},
              search: "",
@@ -56,7 +56,7 @@ export default defineComponent({
             // .
     },
     methods:{      
-    showmodals(id){
+    showmodals(id:number){
     this.index = id;
     this.showmodal = !this.showmodal
     console.log(this.index)
@@ -74,11 +74,12 @@ export default defineComponent({
         filteredProducts() {
       return this.recette.filter(p => {
         // return true if the product should be visible
-        console.log('YO'+this.recette)
+        console.log(this.recette)
 
         // in this example we just check if the search string
         // is a substring of the product name (case insensitive)
         return p.description.name.toLowerCase().indexOf(this.search.toLowerCase()) != -1;
+        
       });
       },
     }
@@ -148,7 +149,7 @@ export default defineComponent({
       </div>
       <div id="name_recette" class="flex justify-center items-center flex-col">
         <div id="rec_name">
-          <h1 class="tab-title-recipe">{{item.description.name}}</h1>
+          <h1 class="tab-title-recipe">{{}}</h1>
         </div>
         <div
           class="btn-detail bg-[#242424] dark:bg-orange-600 rounded px-2 py-2 text-white hover:bg-red-600 dark:hover:bg-orange-400 dark:hover:text-black"
