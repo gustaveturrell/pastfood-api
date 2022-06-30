@@ -40,7 +40,7 @@ console.log(props.recettes)
     >
       <Transition name="modal-content">
         <div
-          class="modal-container rounded relative p-4 w-full max-w-2xl h-full overflow-y-auto scrollbar bg-white dark:bg-red-600"
+          class="modal-container rounded relative p-4 w-full max-w-2xl h-full overflow-y-auto scrollbar bg-white dark:bg-gray-600"
         >
           <div class="md:shrink-0">
             <div class="flex justify-end">
@@ -58,15 +58,16 @@ console.log(props.recettes)
               id="card-desc"
               class="descript bg-gray-300 dark:bg-[#1a1a1a] px-6 py-4 dark:text-white "
             >
-              <div class="flex flex-col flex-shrink-0">
-                <div class="font-bold text-xl mb-2 grow">
-                  <h4>{{ recettes.description.name|| 'pas de données émises' }} , {{recettes.id}}</h4>
-                </div>
-                <div id="star_score" class="-order-1">
+              <div class="flex flex-row flex-shrink-0 space-between">
+                
+                <div id="star_score" class="">
                   <font-awesome-icon icon="star" />
-                  {{recettes.ratingsAverage}}
+                  <h4>{{recettes.ratingsAverage}}</h4>
                 </div>
-                <div id="addHeart" class="order-last">
+                <div class="flex items-center justify-center font-bold text-xl mb-2 grow">
+                  <h4>{{ recettes.description.name|| 'pas de données émises' }}</h4>
+                </div>
+                <div id="addHeart" class="">
                   <button type="button" disabled class="cursor-not-allowed">
                     <font-awesome-icon icon="heart" size="lg" />
                   </button>
@@ -74,52 +75,49 @@ console.log(props.recettes)
               </div>
               <div id="desc_recette" class="mb-4 overflow-y-auto">
                 <div class="dark:bg-[#242424] p-2 rounded">
-                  <div id="periode">
-                    <h4>Période: {{recettes.description.period}}</h4>
+                  <div id="periode" class="mb-4 ">
+                    <h4 class="font-bold text-xl flex justify-center items-center">Période</h4>
+                    <p class="flex justify-center items-center">{{recettes.description.period}}</p>
                   </div>
-                  <div id="description">
-                    <h4>description</h4>
+                  <div id="description" class="mb-4">
+                    <!-- <h4 class="font-bold text-xl flex justify-center items-center">description</h4> -->
                     <div>
-                      <h4>Résumé:</h4>
+                      <h4 class="font-bold text-xl flex justify-center items-center">Résumé</h4>
                       <div>
                         <p>{{recettes.description.resume}}</p>
                       </div>
                     </div>
-                    <div id="ingredient">
-                      <h2>Ingrédient</h2>
+                    <div id="ingredient" class="mb-4">
+                      <h4 class="font-bold text-xl flex justify-center items-center">Ingrédients</h4>
                       <div class="grid grid-cols-1">
                         <div
                           v-for="(recettes, index) in recettes.ingredientsAll"
                         >
                           <div id="intitule">
-                            <div>Index: {{index}}</div>
-                            <div>Unité: {{recettes.unit}}</div>
-                            <div>max/min: {{recettes.maximun || 'rien'}}/{{recettes.minimun ||'rien'}}</div>
-                            <div>wikidataQID: {{recettes.wikidataQID}}</div>
                             <div>
                               <span>
-                                <p>Ingrédient transcript:</p>
+                                <p>Ingrédient {{index+1}}:</p>
                                 <a :href="recettes._ingTranscript"></a>
                                 {{recettes._ingTranscript}}
                               </span>
                             </div>
-                            <div>Ingrédient traduit: {{recettes._ingTranslated}}</div>
+                            <div>wikidataQID: {{recettes.wikidataQID}}</div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div id="instruction">
-                      <h1>Instruction</h1>
+                      <h4 class="font-bold text-xl flex justify-center items-center">Instruction</h4>
                       <div
                         v-for="(recettes, index) in recettes.instructionsAll"
                         :key="index"
                       >
                         <div id="instruct-transcription">
                           <div>
-                            <h2>Etape : {{recettes.index}}</h2>
-                            <h1>Transcription</h1>
+                            <h2>Etape : {{recettes.key}}</h2>
+                            <h1>Transcription:</h1>
                             <p>{{recettes._textTranscript}}</p>
-                            <h1>Traduction</h1>
+                            <h1>Traduction:</h1>
                             <p>{{recettes._textTranslated}}</p>
                           </div>
                         </div>

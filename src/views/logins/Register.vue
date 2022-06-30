@@ -16,19 +16,22 @@ export default {
       user:{ 
         email :'',
         password : '',
-        },      
+        },  
+        errors:[]    
     }
   },
   methods: {
     loginSubmit (){
+      this.errors = []
       accountService.login(this.user)
+      
       .then( res=>{
         accountService.saveToken(res.data.token);
         this.$router.push('/');
         console.log(res);
         console.log('co');
       }).catch(err=>console.log(err))
-      }    
+      }  
   }
 }
 
@@ -167,6 +170,14 @@ export default {
            Continue with Twitter
                 </a>-->
               </form>
+              <div v-if="errors.length" class="inline-block px-7 py-3 bg-blue-600 text-white dark:bg-orange-600 dark:text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 dark:hover:bg-orange-700 hover:shadow-lg focus:bg-blue-700 dark:focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full">
+      <p>
+            <h1>Erreurs</h1>
+            <ul>
+                <li v-for="error in errors">{{error}}</li>
+            </ul>
+        </p>
+    </div>
             </TabPanel>
             <TabPanel>
               <nouveau />

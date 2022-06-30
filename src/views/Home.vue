@@ -7,8 +7,8 @@ import RecettesTab from '../components/RecettesTab.vue'
 
 <template>
 
-      <div class="px-4 flex flex-col gap-2 mb-4">
-        <div id="tableau" class="container mb-4 mx-auto">
+      <div class="px-4 flex flex-col gap-2">
+        <div id="tableau">
             <RecettesTab />
         </div>
       </div>

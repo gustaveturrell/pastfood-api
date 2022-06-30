@@ -40,10 +40,10 @@ import { recipeService } from '../services/recipes_services';
 export default defineComponent({
     data(){
         return{
-            recette: {},
+            recette: {} as any,
             showmodal:false,
-            index:{},
-             search: {},
+            index:{} as any,
+             search: '',
         }
     },
     created(){
@@ -69,19 +69,29 @@ export default defineComponent({
             return (this.recette.length == 0) ? ' Aucune recette ' : ` Il y en a ${this.recette.length} `
         },
         dateFormat(){
-            return this.recette.map(c => c.createdAt.split('T')[0].split('-').reverse().join('/'))
+            return this.recette.map((c: { createdAt: string; }) => c.createdAt.split('T')[0].split('-').reverse().join('/'))
         },
         filteredProducts() {
-      return this.recette.filter(p => {
-        // return true if the product should be visible
-        console.log(this.recette)
+        return this.recette.filter((p: { description: { name: string; }; }) => {
 
-        // in this example we just check if the search string
-        // is a substring of the product name (case insensitive)
-        return p.description.name.toLowerCase().indexOf(this.search.toLowerCase()) != -1;
+         p.description.name.toLowerCase().includes(this.search.toLowerCase());
         
       });
       },
+    // filteredRecipes() {
+    // let tempRecipes = this.recette
+    
+    // // Process search input
+    // if (this.search != '' && this.search) {
+    //     tempRecipes = tempRecipes.filter((recette: { description: { name: string; }; }) => {
+    //       return recette.description.name
+    //         .toLowerCase()
+    //         .includes(this.search.toLowerCase())
+    //     });
+    //   }
+    //  },
+    
+
     }
 })
 
@@ -90,7 +100,7 @@ export default defineComponent({
 
 <template>
 
-<div class="dark:bg-[#141414] h-screen">
+<div class="dark:bg-[#141414]">
   <div
     id="search-bar"
     class="xl:w-96 container mx-auto mb-6 dark:bg-[#141414]"
@@ -107,6 +117,11 @@ export default defineComponent({
    
   </div>
   <div id="filter">
+    <div id="searchRecette">
+          <h4 class="dark:text-white">{{ comptage }}</h4>
+          <div class="search-wrapper panel-heading col-sm-12">
+        <input type="text" v-model="search" placeholder="Search" /> <br> <br>
+        </div>  
     <div id="btn-filters">
       <button @click="openFiltre">
         <font-awesome-icon
@@ -128,18 +143,14 @@ export default defineComponent({
       </button>
     </div>
   </div>
-  <div id="last-update" class="container mx-auto dark:bg-[#141414]">
-    <div>
-      <h4 class="dark:text-white">{{ comptage }}</h4>
-       <div class="search-wrapper panel-heading col-sm-12">
-    <input type="text" v-model="search" placeholder="Search" /> <br> <br>
-  </div>  
-    </div>
+      <div id="last-update" class="container mx-auto dark:bg-[#141414] h-screen overflow-y-auto scrollbar">
+        
+      
     <div
       id="tab_rec"
-      class="tab_recettes bg-[#f1f1f1] text-[#476582] dark:bg-[#2a2929] dark:text-white grid grid-cols-3 gap-2 rounded p-2 mb-4 overflow-y-auto"
+      class="tab_recettes  overflow-y-auto bg-[#f1f1f1] text-[#476582] dark:bg-[#2a2929] dark:text-white grid grid-cols-3 gap-2 rounded p-2 mb-4 overflow-y-auto"
       v-for="(item, index) in recette"
-      :key="index"
+      :key="item.id"
     >
       <div id="star_score">
         <p class>
@@ -171,7 +182,7 @@ export default defineComponent({
 
     <!-- <Teleport to="body"> -->
 
-    <!-- </Teleport>    -->
+    </div><!-- </Teleport>    -->
   </div>
 </div>
 </template>

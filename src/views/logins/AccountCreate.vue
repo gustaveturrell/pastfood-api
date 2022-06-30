@@ -32,11 +32,29 @@ export default {
         email : '',
         password :'',
         passwordConfirm :'',
+        errors:[]
        
     } 
   },
   methods: {
     async onSubmit(){
+      this.errors = []
+       if (this.name == ''){
+        this.errors.push('doit contenir un nom')
+      }
+      if (this.email == ''){
+        this.errors.push('doit contenir un email valide')
+      }
+      // if (this.password == ''){
+      //   this.errors.push('doit contenir un email valide')
+      // }
+      if (this.password.length < 8){
+        this.errors.push('mot de passe doit avoir 8 caractères')
+      }
+      if (this.password != this.passwordConfirm){
+        this.errors.push('mot de passe ne correspond pas')
+      }
+      if(this.errors.length == 0){
       const response = await axios.post(`${import.meta.env.VITE_APP_API_URL}pastfood/v1/users/signup/`,{
         name: this.name,
         email: this.email,
@@ -46,7 +64,7 @@ export default {
       console.log(response);
      await this.$router.push('/Register');
       }    
-    
+    }
   }
 }
 
@@ -108,12 +126,20 @@ const onSubmit= async()=>{
             </div>
             <button
               type="submit" value="login"
-              class="inline-block px-7 py-3 bg-blue-600 text-white dark:bg-orange-600 dark:text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 dark:hover:bg-orange-700 hover:shadow-lg focus:bg-blue-700 dark:focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+              class="inline-block mb-4 px-7 py-3 bg-blue-600 text-white dark:bg-orange-600 dark:text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 dark:hover:bg-orange-700 hover:shadow-lg focus:bg-blue-700 dark:focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light" 
             >
               Valider
             </button>
     </form>
+    <div v-if="errors.length" class="inline-block px-7 py-3 bg-blue-600 text-white dark:bg-orange-600 dark:text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 dark:hover:bg-orange-700 hover:shadow-lg focus:bg-blue-700 dark:focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full">
+      <p>
+            <h1>Erreurs</h1>
+            <ul>
+                <li v-for="error in errors">{{error}}</li>
+            </ul>
+        </p>
+    </div>
 </template>
 

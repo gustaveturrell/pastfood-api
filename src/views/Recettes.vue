@@ -33,10 +33,10 @@ export default defineComponent({
 
 
 <template>
-  <div class="dark:bg-[#141414]">
-    <div id="card-recette" class=" dark:bg-[#141414]">
+  <div class="dark:bg-[#141414] min-h-screen">
+    <div id="card-recette" class=" dark:bg-[#141414] h-screen overflow-y-auto scrollbar">
       <div
-        class="modal-container mx-auto rounded p-4 w-full max-w-2xl"
+        class="modal-container mx-auto relative p-4 w-full max-w-2xl "
         v-for="(recette, index) in recette"
         :key="index"
       >
@@ -65,20 +65,31 @@ export default defineComponent({
             <div id="desc_recette" class="mb-4 overflow-y-auto">
               <div class="bg-[#242424] p-2 rounded">
                 <div id="periode">
-                  <h4>Période:</h4>
-                  {{recette.description.period}}
+                  <h4 class="font-bold text-xl flex justify-center items-center">Période</h4>
+                  <p class="flex justify-center items-center">{{recette.description.period}}</p>
                 </div>
                 <div id="description">
-                  <h4>Résumé:</h4>
+                  <h4 class="font-bold text-xl flex justify-center items-center">Résumé</h4>
                   <div>
-                    <p>{{recette.description.resume}}</p>
+                    <p class="flex justify-center items-center">{{recette.description.resume}}</p>
                   </div>
-                  <div>
-                    <p>{{recette.id}}</p>
-                  </div>
+                 
                 </div>
                 <div id="ingredient">
-                  <h2>Ingrédient</h2>
+                  <h4 class="font-bold text-xl flex justify-center items-center">Ingrédient</h4>
+                   <div
+                          v-for="(recette, index) in recette.ingredientsAll">
+                          <div id="intitule">
+                            <div>
+                              <span>
+                                <p>Ingrédient {{index+1}}:</p>
+                                <a :href="recette._ingTranscript"></a>
+                                {{recette._ingTranscript}}
+                              </span>
+                            </div>
+                            <div>wikidataQID: {{recette.wikidataQID}}</div>
+                          </div>
+                        </div>
                   <!-- <div class="grid grid-cols-1">
                     <div v-for="(recette, index) in recette.ingredientsAll">
                     <div id="intitule">
@@ -129,7 +140,7 @@ export default defineComponent({
                   -->
                 </div>
                 <div id="instruction">
-                  <h1>Instruction</h1>
+                  <h4 class="font-bold text-xl flex justify-center items-center">Instruction</h4>
                   <div
                     v-for="(recette, index) in recette.instructionsAll"
                     :key="index"
